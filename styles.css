@@ -1,0 +1,120 @@
+html {
+    font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; /* Creates a horizontal layout */
+    margin: 0; /* Removes default margin */
+}
+
+#navbar {
+    background-color: black;
+    padding: 20px 20px;
+    position: fixed; /* Keeps it fixed to the viewport */
+    top: 0;
+    left: 0;
+    height: 97.5vh; /* Full height of the viewport */
+    width: 300px; /* 30% of the viewport width */
+    display: flex;
+    flex-direction: column; /* Stacks navbar content vertically */
+    justify-content: space-between; /* Ensures content is spread out with footer at bottom */
+    z-index: 10; /* Keeps the navbar above other elements */
+    overflow-y: auto; /* Ensures scroll if content overflows */
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#navbar header {
+    color: white;
+    letter-spacing: 1px;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Removes bullet points */
+    flex-grow: 1; /* Allow the list to take remaining space */
+}
+
+#navbar ul li a{
+    margin: 1rem 0; /* Adds spacing between items */
+    border-radius: 7px;
+}
+
+#navbar ul li a {
+    padding: 10px;
+    text-decoration: none; /* Removes underline */
+    color: rgb(141, 142, 143); /* Sets anchor text color */
+    display: block;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+#navbar ul{
+    margin-top: 50px;
+}
+
+#navbar ul li a:hover{
+    font-weight: 500;
+    color: white;
+    background-color: rgb(175, 1, 1);
+}
+
+main {
+    margin-left: 310px; /* Matches navbar width to prevent overlap */
+    padding: 2rem;
+    flex: 1; /* Allows main content to occupy remaining space */
+}
+
+footer {
+    color: white;
+    font-size: xx-small;
+    text-align: left;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    display: flex;
+    padding: 0;
+    align-items: center;
+    gap: 10px;
+}
+
+#navbar .border-bottom{
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+}
+
+.border-bottom{
+    border-bottom: 2px solid gray;
+    border-radius: 10px;
+}
+
+header{
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+section header{
+    font-size: x-large;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+section {
+    margin: 20px 0; /* Adds vertical spacing between sections */
+    padding: 20px; /* Adds internal spacing within each section */
+    border-radius: 10px; /* Optional: To give sections a rounded appearance */
+}
+
+section:first-of-type{
+    margin-top: -20px;
+}
+
+iframe{
+    display: block;
+    margin: auto auto
+}
